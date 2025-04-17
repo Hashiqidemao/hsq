@@ -1,0 +1,91 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #004466;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #eee;
+}
+nav li {
+  flex: 1;
+}
+nav a {
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+}
+nav a.active {
+  background: #ddd;
+  font-weight: bold;
+}
+/* 整个模块居中，最大宽度限定，卡片化 */
+.module-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* 表单行水平排列，并在小屏时自动换行 */
+.module-container .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.module-container .form-row label {
+  flex: 1;
+  min-width: 120px;
+}
+
+/* 按钮靠右 */
+.module-container .form-actions {
+  text-align: right;
+  margin-bottom: 1.5rem;
+}
+.module-container button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #004466;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.module-container button:hover {
+  background: #003350;
+}
+
+/* 结果表格美化 */
+.module-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+.module-container th,
+.module-container td {
+  padding: 0.6rem;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+.module-container th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+main {
+  padding: 1rem;
+}
